@@ -7,6 +7,10 @@ The project involves send messages from a web application to a raspberry pi REST
 ## Pre-requisites
 Install docker. 
 
+## Home Page
+
+![alt text](https://flic.kr/p/2kHSaSR)
+
 ## Usage
 To run the web server, cd into the src/ folder and run.
 
