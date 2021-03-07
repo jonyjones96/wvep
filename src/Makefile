@@ -1,0 +1,7 @@
+SHELL := /bin/bash
+.PHONY: webapp
+.EXPORT_ALL_VARIABLES:
+
+HOST_ENV=127.0.0.1
+USER_ENV=user
+PASS_ENV=example

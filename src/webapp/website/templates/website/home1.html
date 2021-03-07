@@ -1,0 +1,19 @@
+{% extends "website/base.html"%}
+  {%block content %}
+    {% for tool in supplies  %}  
+      <article class="media content-section">  
+        <div class="media-body">
+          <div class="article-metadata">
+            <h5 class="">Product Name: {{tool.id}}</h5>
+            <p class="card-text">Product Code: {{tool.Name }} Price: £{{tool.Description}}</p>
+       <p class="card-text"> Product Features: <p>
+       <ol>
+         {% for j in tool.productFeatures %} 
+         <li> {{j}}</li>
+         {% endfor %}
+       </ol>
+       </div>
+      </div>
+    </div>
+    {% endfor %}  
+{% endblock content %}
