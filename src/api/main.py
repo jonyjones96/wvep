@@ -1,5 +1,6 @@
 import flask
 import json
+import os
 from flask import request, jsonify
 
 app = flask.Flask(__name__)
@@ -53,5 +54,10 @@ def getItem(id):
 def getStatus():
     return jsonify(status)
 
-app.run()
-
+#app.run()
+if __name__ == "__main__":
+    app.run(
+        host=os.environ.get("BACKEND_HOST", "172.0.0.1"),
+        port=5000,
+        debug=True,
+    )
