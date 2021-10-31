@@ -40,7 +40,7 @@ while True:
     incoming = radio.receive()
     if incoming == '0':
         display.show(Image.HEART)
-        pin1.write_analog(90)
+        pin1.write_analog(1)
         pin2.write_analog(180)
     elif incoming == '1':
         display.show(Image.HAPPY)
@@ -50,7 +50,7 @@ while True:
         pin2.write_analog(0)
     elif incoming == '3':
         display.show(Image.SMILE) 
-        pin1.write_analog(90)
+        pin1.write_analog(1)
     elif incoming == '4':
         display.show(Image.SAD)
         pin1.write_analog(0)
